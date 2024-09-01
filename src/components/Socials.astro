@@ -12,30 +12,15 @@
 enum Type {
 	linkedIn = 'LinkedIn',
 	gitHub = 'GitHub',
-	twitter = 'Twitter',
-	instagram = 'Instagram',
-	email = 'Email',
-	titok = 'TikTok',
+	email = 'Email'
 }
 
 const socials = [
-	{
-		name: Type.twitter,
-		url: 'https://twitter.com/xxx',
-		icon: 'assets/svg/icons/x.svg',
-		color: 'bg-gray-800',
-	},
 	{
 		name: Type.gitHub,
 		url: 'https://github.com/xxx',
 		icon: 'assets/svg/icons/github.svg',
 		color: 'bg-cyan-500',
-	},
-	{
-		name: Type.instagram,
-		url: 'https://www.instagram.com/xxx',
-		icon: 'assets/svg/icons/instagram.svg',
-		color: 'bg-yellow-400',
 	},
 	{
 		name: Type.email,
@@ -48,13 +33,7 @@ const socials = [
 		url: 'https://www.linkedin.com/in/xxx',
 		icon: 'assets/svg/icons/linkedin.svg',
 		color: 'bg-sky-700',
-	},
-	{
-		name: Type.titok,
-		url: 'https://www.tiktok.com/xxx',
-		icon: 'assets/svg/icons/tiktok.svg',
-		color: 'bg-pink-400',
-	},
+	}
 ];
 
 const getColor = (type: Type) => socials.find((social) => social.name === type)?.color;
